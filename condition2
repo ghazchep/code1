@@ -1,0 +1,25 @@
+// Total marks for a student
+const totalMarks = 72;
+
+// Function to determine the grade based on total marks
+function getGrade(marks) {
+    if (marks >= 85) {
+        return 'A';
+    } else if (marks >= 80) {
+        return 'B';
+    } else if (marks >= 70) {
+        return 'C';
+    } else if (marks >= 60) {
+        return 'D';
+    } else if (marks >= 50) {
+        return 'E';
+    } else {
+        return 'Fail';
+    }
+}
+
+// Determine the grade based on the total marks
+const grade = getGrade(totalMarks);
+
+// Log the result
+console.log(`The grade for total marks ${totalMarks} is: ${grade}`);
